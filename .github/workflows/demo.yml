@@ -16,6 +16,6 @@ jobs:
   imprimir:
     runs-on: windows-latest
 
-steps:
-  - name: Mostrar nombre completo
-    run: echo "Tu nombre es ${{ github.event.inputs.nombre }} ${{ github.event.inputs.apellidos }}"
+    steps:
+      - name: Mostrar nombre completo
+        run: echo "Tu nombre es ${{ github.event.inputs.nombre }} ${{ github.event.inputs.apellidos }}"
