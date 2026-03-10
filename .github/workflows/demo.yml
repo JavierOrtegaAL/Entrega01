@@ -4,13 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       nombre:
-        description: "Introduce tu nombre"
+        description: "Introduce tu nombre y apellidos"
         required: true
-        default: "Nombre"
-      apellidos:
-        description: "Introduce tus apellidos"
-        required: true
-        default: "Apellidos"
+        default: "Nombre y Apellidos"
 
 jobs:
   imprimir:
@@ -18,4 +14,4 @@ jobs:
 
     steps:
       - name: Mostrar nombre completo
-        run: echo "Tu nombre es ${{ github.event.inputs.nombre }} ${{ github.event.inputs.apellidos }}"
+        run: echo "${{ github.event.inputs.nombre }}"
