@@ -1,20 +1,20 @@
 name: Mostrar nombre y apellidos
 
 on:
-workflow_dispatch:
-inputs:
-nombre:
-description: "Introduce tu nombre"
-required: true
-default: "Nombre"
-apellidos:
-description: "Introduce tus apellidos"
-required: true
-default: "Apellidos"
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: "Introduce tu nombre"
+        required: true
+        default: "Nombre"
+      apellidos:
+        description: "Introduce tus apellidos"
+        required: true
+        default: "Apellidos"
 
 jobs:
-imprimir:
-runs-on: ubuntu-latest
+  imprimir:
+    runs-on: ubuntu-latest
 
 steps:
   - name: Mostrar nombre completo
